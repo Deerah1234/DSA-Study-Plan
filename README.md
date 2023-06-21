@@ -4,25 +4,25 @@ This repository contains my study plan for Data Structures and Algorithms (DSA) 
 
 ## Repository Structure
 
-- [x] **Week 1-2: Data Structures**: Refreshing knowledge of arrays, strings, linked lists, stacks, and queues Studying trees, binary trees, graphs, hash tables, and heaps.
-  - [x] - Arrays
-  - [x] - Strings
-  - [x] - Linked Lists
-  - [x] - Stack
-  - [x] - Queues
-  - [x] - Trees
-  - [x] - Binary Trees
-  - [x] - Graphs
-  - [x] - Hash tables
-  - [x] - Heaps
+- [ ] **Week 1-2: Data Structures**: Refreshing knowledge of arrays, strings, linked lists, stacks, and queues Studying trees, binary trees, graphs, hash tables, and heaps.
+  - [ ] - Arrays
+  - [ ] - Strings
+  - [ ] - Linked Lists
+  - [ ] - Stack
+  - [ ] - Queues
+  - [ ] - Trees
+  - [ ] - Binary Trees
+  - [ ] - Graphs
+  - [ ] - Hash tables
+  - [ ] - Heaps
 
-- [x] **Week 3-4: Algorithms**: Implementing sorting and searching algorithms. Exploring graph algorithms, dynamic programming, recursion, backtracking, and greedy algorithms.
+- [ ] **Week 3-4: Algorithms**: Implementing sorting and searching algorithms. Exploring graph algorithms, dynamic programming, recursion, backtracking, and greedy algorithms.
 
-- [x] **Week 5-6: Problem-Solving Skills**: Solving coding problems on platforms like LeetCode, HackerRank, and CodeSignal. Gradually increasing the difficulty level and focusing on problem-solving techniques.
+- [ ] **Week 5-6: Problem-Solving Skills**: Solving coding problems on platforms like LeetCode, HackerRank, and CodeSignal. Gradually increasing the difficulty level and focusing on problem-solving techniques.
 
-- [x] **Week 7-8: System Design**: Understanding system design principles and practicing designing system architectures. Exploring scalability, load balancing, caching, and database design.
+- [ ] **Week 7-8: System Design**: Understanding system design principles and practicing designing system architectures. Exploring scalability, load balancing, caching, and database design.
 
-- [x] **Week 9-10: Mock Interviews and Practice**: Simulating real interview scenarios through mock interviews. Participating in coding competitions and analyzing performance.
+- [ ] **Week 9-10: Mock Interviews and Practice**: Simulating real interview scenarios through mock interviews. Participating in coding competitions and analyzing performance.
 
 - [ ] **Additional Resources**: Recommended books, online courses, and YouTube channels for further learning.
 
