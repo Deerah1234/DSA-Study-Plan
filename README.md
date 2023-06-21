@@ -91,3 +91,9 @@ Recommended books, online courses, and YouTube channels for further learning.
   - [BackToBackSWE](https://www.youtube.com/c/BackToBackSWE)
   - [Tushar Roy - Coding Made Simple](https://www.youtube.com/user/tusharroy2525)
   - [MIT OpenCourseWare](https://www.youtube.com/user/MIT)
+
+## Contributions
+
+Contributions are always welcome! If you have any suggestions, improvements, or additional resources to add, feel free to contribute to this study plan. To get started, please see the guidelines in [`contributing.md`](contributing.md).
+
+Please adhere to this project's `code of conduct`.
