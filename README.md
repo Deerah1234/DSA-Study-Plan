@@ -5,6 +5,7 @@ This repository contains my study plan for Data Structures and Algorithms (DSA) 
 ## Repository Structure
 
 - [ ] **Week 1-2: Data Structures**: Refreshing knowledge of arrays, strings, linked lists, stacks, and queues Studying trees, binary trees, graphs, hash tables, and heaps.
+
   - [ ] - Arrays
   - [ ] - Strings
   - [ ] - Linked Lists
@@ -17,6 +18,24 @@ This repository contains my study plan for Data Structures and Algorithms (DSA) 
   - [ ] - Heaps
 
 - [ ] **Week 3-4: Algorithms**: Implementing sorting and searching algorithms. Exploring graph algorithms, dynamic programming, recursion, backtracking, and greedy algorithms.
+
+  - **Sorting algorithms**
+    - [ ] - Bubble Sort
+    - [ ] - merge Sort
+    - [ ] - QuickSort
+
+  - **Searching algorithms**
+    - [ ] - Binary Search
+
+  - **Graph algorithms**
+    - [ ] - Depth-first Search (DFS)
+    - [ ] - Breadth-first Search (BFS)
+    - [ ] - Dijkstra's algorithm
+
+  - [ ] - **Dynamic programming**
+  - [ ] - **Recursion**
+  - [ ] - **Backtracking**
+  - [ ] - **Greedy algorithms**
 
 - [ ] **Week 5-6: Problem-Solving Skills**: Solving coding problems on platforms like LeetCode, HackerRank, and CodeSignal. Gradually increasing the difficulty level and focusing on problem-solving techniques.
 
