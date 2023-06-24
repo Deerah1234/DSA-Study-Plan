@@ -1,14 +1,14 @@
 # Table of content
 
-- What is Array
-- Types of Array
-- Why we need Array
-- Advantage of Array
-- Disadvantage of Array
-- Declaration
-- Initialization
-- Memory representation
-- Time complexcity of Array
+- [What is an Array](#What is Array)
+- [Types of Arrays](#Types of Array)
+- [Why Do We Need Arrays](#Why Do We Need Arrays)
+- [Advantages of Arrays](#advantages-of-arrays)
+- [Disadvantages of Arrays](#disadvantages-of-arrays)
+- [Declaration](#declaration)
+- [Initialization](#initialization)
+- [Memory Representation](#memory-representation)
+- [Time Complexity of Arrays](#time-complexity-of-arrays)
 
 ## What is Array
 
