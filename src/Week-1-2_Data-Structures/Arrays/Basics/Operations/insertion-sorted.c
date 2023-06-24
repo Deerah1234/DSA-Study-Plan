@@ -12,8 +12,11 @@ int main() {
 		printf("%d ", a[i]);
 	}
 	printf("\n===================\n");
-	a[size] = a[pos-1];
-	a[pos-1] = num;
+	for (int i = size-1; i >= pos-1; i--)
+	{
+		a[i + 1] = a[i];
+	}
+	a[pos - 1] = num;
 	size++;
 
 	for (int i = 0; i < size; i++)
