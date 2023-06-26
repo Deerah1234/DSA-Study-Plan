@@ -3,23 +3,65 @@
 
 int main(void)
 {
-	int array[50] = { 6, 2, 0, 4, 5 };
-	//NOTE - inline declaration
-	int size = 5, pos = 2;
+	printf("\n");
+    printf(" +-------------------------------------------------------+\n");
+    printf(" |                                                       |\n");
+    printf(" |               deletion of sorted Array                |\n");
+    printf(" |                                                       |\n");
+    printf(" +-------------------------------------------------------+\n");
+	printf("\n");
 
-	for (int i = 0; i <= size-1; i++)
+	int array[50], size_the_array, pos;
+
+	// size of the array
+	printf("Enter size of array: ");
+	scanf("%d", &size_the_array);
+
+	// position of the arrary to delete
+	printf("Enter position to delete: ");
+	scanf("%d", &pos);
+
+	// initialize the array
+	if (size_the_array > 50 && size_the_array < 1) 
+	{
+		printf("invalid size");
+	} 
+	else 
+	{
+		for (int i = 0; i < size_the_array; i++)
+		{
+			printf("index[%d]: ", i + 1);
+			scanf("%d", &array[i]);
+		}
+	}
+
+	// print the array before the deletion
+	printf("Array before deletion: \n");
+	printf("===================== \n");
+	for (int i = 0; i <= size_the_array-1; i++)
 	{
 		printf("%d\t", array[i]);
 	}
 	printf("\n");
-	
-	for (int idx = pos-1; idx < size-1; idx++)
-	{
-		array[idx] = array[idx+1];
-	}
-	size--;
 
-	for (int i = 0; i <= size-1; i++)
+	// delete the element at specified position of sorted array
+	if (pos >= size_the_array || pos <= 0) 
+	{
+		printf("invalid position");
+	}
+	else 
+	{
+		for (int idx = pos-1; idx < size_the_array-1; idx++)
+		{
+			array[idx] = array[idx+1];
+		}
+		size_the_array--;
+	}
+
+	// print the array after deletion
+	printf("Array after deletion: \n");
+	printf("===================== \n");
+	for (int i = 0; i <= size_the_array-1; i++)
 	{
 		printf("%d\t", array[i]);
 	}
