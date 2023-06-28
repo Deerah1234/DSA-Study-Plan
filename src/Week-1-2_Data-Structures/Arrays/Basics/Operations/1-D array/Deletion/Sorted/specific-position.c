@@ -6,7 +6,8 @@ int main(void)
 	printf("\n");
     printf(" +-------------------------------------------------------+\n");
     printf(" |                                                       |\n");
-    printf(" |               deletion of sorted Array                |\n");
+    printf(" |               Deletion of sorted Array:               |\n");
+    printf(" |               At specific positon                     |\n");
     printf(" |                                                       |\n");
     printf(" +-------------------------------------------------------+\n");
 	printf("\n");
