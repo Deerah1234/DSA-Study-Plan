@@ -7,7 +7,7 @@ int main(void)
 	int num_of_rows = 2, num_of_cols = 3;
 	int *ptr = &array[0][0];
 
-	// Using pointer 
+	// Using pointer to print the array elements
 	for (int row = 0; row < num_of_rows; row++)
 	{
 		for (int col = 0; col < num_of_cols; col++)
