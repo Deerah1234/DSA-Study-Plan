@@ -4,12 +4,12 @@
 int main(void)
 {
 	printf("\n");
-    printf(" +---------------------------------------------------------+\n");
-    printf(" |                                                         |\n");
-    printf(" |               Deletion of unsorted Array:               |\n");
-    printf(" |               At specific positon                       |\n");
-    printf(" |                                                         |\n");
-    printf(" +---------------------------------------------------------+\n");
+    printf(" +----------------------------------------------------------+\n");
+    printf(" |                                                          |\n");
+    printf(" |               Deletion of unsorted Array:                |\n");
+    printf(" |               At specific positon.                       |\n");
+    printf(" |                                                          |\n");
+    printf(" +----------------------------------------------------------+\n");
 	printf("\n");
 
 	int array[50], size_of_array, pos;
