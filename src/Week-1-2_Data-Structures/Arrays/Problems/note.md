@@ -6,6 +6,9 @@
 2. WAP to count the element of an array.
 3. WAP to read an array of 10 intergers and count total no of even and odd elements.
 4. WAP to read two arrays of size 5 and store sum of these arrays into third array.
+5. WAP to Remove Duplicates Items in an Array
+6. WAP to reverse the elements in an Array
+7. WAP a program to check whether any of the digits in a number appears more than once.
 
 ## 2D Array
 
