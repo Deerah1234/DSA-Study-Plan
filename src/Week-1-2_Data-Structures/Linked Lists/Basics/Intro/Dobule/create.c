@@ -4,38 +4,38 @@
 struct node
 {
     int data;
-    struct node* next;
-    struct node* prev;
+    struct node *next;
+    struct node *prev;
 };
 
-void create(struct node** head);
-void display(struct node* head);
+struct node * create(struct node *head);
+void display(struct node *head);
+
 
 int main(void)
 {
-    struct node* head = NULL;
-    create(&head);
+    struct node *head = 0;
+    head = create(head);
     display(head);
-    return 0;
+    return (0);
 }
 
-void create(struct node** head)
+struct node * create(struct node *head) 
 {
-    struct node* newnode;
-    struct node* temp;
+    struct node *temp = head, *newnode;
     int choice = 1;
 
     while (choice)
     {
-        newnode = (struct node*)malloc(sizeof(struct node));
+        newnode = (struct node *)malloc(sizeof(struct node));
         printf("Enter data: ");
         scanf("%d", &newnode->data);
-        newnode->prev = NULL;
-        newnode->next = NULL;
+        newnode->next = 0;
+        newnode->prev = 0;
 
-        if (*head == NULL)
+        if ( head == 0 )
         {
-            *head = temp = newnode;
+            head = temp = newnode;
         }
         else
         {
@@ -47,15 +47,17 @@ void create(struct node** head)
         printf("Do you want to continue? (0 or 1): ");
         scanf("%d", &choice);
     }
+    return head;
 }
 
-void display(struct node* head)
+void display(struct node *head)
 {
-    struct node* temp = head;
+    struct node *temp = head;
 
-    while (temp != NULL)
+    while (temp != 0)
     {
-        printf("%d\t\n", temp->data);
+        printf("%d\t", temp->data);
         temp = temp->next;
     }
+    printf("\n");
 }
