@@ -10,6 +10,8 @@ struct node
 
 void display();
 void insertAtBeg();
+void insertAtEnd();
+void insertAtPos();
 
 int main(void)
 {
@@ -44,7 +46,7 @@ int main(void)
 		printf("\nOriginal Lists:\n");
 		display();
 		printf("\nLists after insection:\n");
-		insertAtBeg();
+		insertAtPos();
 		display();
 	}
 	
@@ -74,4 +76,40 @@ void insertAtBeg()
 	head->prev = newnode;
 	newnode->next = head;
 	head = newnode;
+}
+
+void insertAtEnd()
+{
+	struct node *newnode;
+	newnode = malloc(sizeof(struct node));
+	printf("Enter data you want to insect at the end: ");
+	scanf("%d", &newnode->data);
+	newnode->next = 0, newnode->prev = 0;
+
+	tail->next = newnode;
+	newnode->prev = tail;
+	tail = newnode;
+}
+
+void insertAtPos()
+{
+	struct node *newnode, *temp = head;
+	int pos, i = 1;
+	printf("Enter postion: ");
+	scanf("%d", &pos);
+
+	newnode = malloc(sizeof(struct node));
+	printf("Enter data you want to insect at the position: ");
+	scanf("%d", &newnode->data);
+	newnode->next = 0, newnode->prev = 0;
+
+	while (i < pos-1)
+	{
+		temp = temp->next;
+		i++;
+	}
+	newnode->prev = temp;
+	newnode->next = temp->next;
+	temp->next = newnode;
+	newnode->next->prev = newnode;
 }
