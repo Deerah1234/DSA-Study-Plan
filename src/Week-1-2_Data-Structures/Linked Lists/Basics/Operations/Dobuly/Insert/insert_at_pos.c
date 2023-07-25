@@ -1,14 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "util.h"
 
-struct node
-{
-	int data;
-	struct node *next;
-	struct node *prev;
-} *head, *tail;
 
-void insertAtPos()
+void insertAtPos(struct node *head)
 {
 	struct node *newnode, *temp = head;
 	int pos, i = 1;

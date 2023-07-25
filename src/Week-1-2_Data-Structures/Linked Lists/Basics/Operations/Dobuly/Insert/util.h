@@ -11,6 +11,8 @@ struct node
 
 // Function prototypes
 struct node * insertAtBeg(struct node *head);
+struct node * insertAtEnd(struct node *tail);
+void insertAtPos(struct node *head);
 
 
 #endif

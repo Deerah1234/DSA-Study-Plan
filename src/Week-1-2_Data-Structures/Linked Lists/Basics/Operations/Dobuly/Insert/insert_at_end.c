@@ -1,14 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "util.h"
 
-struct node
-{
-	int data;
-	struct node *next;
-	struct node *prev;
-} *head, *tail;
 
-void insertAtEnd()
+struct node * insertAtEnd(struct node *tail)
 {
 	struct node *newnode;
 	newnode = malloc(sizeof(struct node));
