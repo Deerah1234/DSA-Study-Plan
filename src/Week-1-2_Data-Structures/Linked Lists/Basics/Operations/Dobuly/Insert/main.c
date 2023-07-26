@@ -20,7 +20,7 @@ int main(void)
 {
 	struct node *head, *tail, *newnode;
 	head = 0;
-	int choice = 1; 
+	int choice = 1, vote = 0; 
 
 	while (choice)
 	{
@@ -48,10 +48,28 @@ int main(void)
 	{
 		printf("\nOriginal Lists:\n");
 		display(head);
-		printf("\nLists after insection:\n");
-		insertAtPos(head);
-		lengthNode(head);
-		display(head);
+
+		printf("\nDo you want to insert insection?\n");
+		printf("\n1: insertAtBeg.\n2: insertAtEnd.\n3: insertAtPos.\n0: exit\n");
+		scanf("%d", &vote);
+
+		switch (vote)
+		{
+			case 1:
+				head = insertAtBeg(head);
+				display(head);
+				break;
+			case 2:
+				tail = insertAtEnd(tail);
+				display(head);
+				break;
+			case 3:
+				insertAtPos(head);
+				display(head);
+				break;
+			case 0:
+				break;
+		}
 	}
 	
 	return (0);
@@ -62,6 +80,7 @@ void display(struct node *head)
 {
     struct node *temp = head;
 
+	printf("\nList after insertion:\n");
     while (temp != 0)
     {
         printf("%d\t", temp->data);
