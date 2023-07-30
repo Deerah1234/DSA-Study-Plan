@@ -5,25 +5,27 @@ struct node
 {
 	int data;
 	struct node *next;
-} *head;
+};
 
 
-void display();
+void display(struct node *head);
 
 
 int main(void)
 {
+	struct node *head, *newnode, *temp;
 	head = 0;
-	struct node *newnode, *temp;
 	int choice = 1;
 
 	while (choice)
 	{
+		// Creating new node
 		newnode = (struct node *)malloc(sizeof(struct node));
 		printf("Enter data: ");
 		scanf("%d", &newnode->data);
 		newnode->next = 0;
 
+		// Check if head is empty or not
 		if (head == 0)
 		{
 			head = temp = newnode;
@@ -33,7 +35,7 @@ int main(void)
 			temp->next = newnode;
 			temp = newnode;
 		}
-		temp->next = head; // circular
+		temp->next = head; // circular (store the head node address)
 		
 		printf("Do you want to continue? (0 or 1): ");
         scanf("%d", &choice);
@@ -41,13 +43,13 @@ int main(void)
 
 	if(!choice) 
 	{
-		display();
+		display(head);
 	}
 	
 	return (0);
 }
 
-void display() 
+void display(struct node *head) 
 {
 	struct node *temp = head;
 
