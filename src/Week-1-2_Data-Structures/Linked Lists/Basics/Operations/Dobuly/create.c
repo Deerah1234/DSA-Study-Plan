@@ -47,6 +47,7 @@ struct node * create(struct node *head)
         printf("Do you want to continue? (0 or 1): ");
         scanf("%d", &choice);
     }
+    
     return head;
 }
 
