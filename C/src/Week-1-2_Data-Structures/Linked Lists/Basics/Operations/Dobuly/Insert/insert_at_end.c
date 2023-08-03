@@ -14,4 +14,6 @@ struct node * insertAtEnd(struct node *tail)
 	tail->next = newnode;
 	newnode->prev = tail;
 	tail = newnode;
+
+	return tail;
 }
