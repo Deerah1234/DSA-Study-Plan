@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Structure of a Dobuly Circular LL
 struct node
 {
 	int data;
