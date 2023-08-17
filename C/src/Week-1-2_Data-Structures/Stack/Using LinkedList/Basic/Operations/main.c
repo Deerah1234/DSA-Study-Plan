@@ -7,67 +7,73 @@ struct node
     struct node *link;
 };
 
-
 struct node *top = 0;
+int length = 0;
 
 void push(int);
 void display();
 void peek();
 void pop();
 
-int main(void)
+int main()
 {
     push(3);
     push(4);
     push(5);
-    pop();
     display();
     peek();
+    pop();
+    display();
 
-    return (0);
+    return 0;
 }
 
 void push(int x)
 {
-   struct node *newnode;
+    struct node *newnode;
     newnode = malloc(sizeof(struct node));
-    newnode -> data = x;
-    newnode -> link = top;
+    newnode->data = x;
+    newnode->link = top;
     top = newnode;
+    length++;
 }
 
 void display()
 {
     struct node *temp = top;
-    if ( top == 0 )
-        printf("Empty stack Linked List");
-    else
+
+    system("cls");
+    
+    while (temp != 0)
     {
-        while (temp != 0)
-        {
-            printf("%d\n", temp->data);
-            temp = temp->link;
-        }
+        printf("%d\t", temp->data);
+        temp = temp->link;
     }
+    printf("\nLength: %d", length);
+    printf("\n");
 }
 
 void peek()
 {
-    if ( top == 0 )
-        printf("Empty stack Linked List");
+    if(top == 0)
+        printf("Empty stack");
     else
+    {
         printf("Top: %d\n", top->data);
+    }
 }
 
 void pop()
 {
     struct node *temp = top;
-    if ( top == 0 )
-        printf("Empty stack Linked List");
+
+    if(length == 0)
+        printf("Empty stack");
     else
     {
-        printf("value: %d\n", top->data);
-        top = top->link;
+        printf("Value: %d\n", temp->data);
+        top = temp->link;
+        length--;
         free(temp);
-    }  
+    }
 }
