@@ -1,7 +1,16 @@
 # Problems
 
 1. Instructions: Write the Node and LinkedList constructors2
-2.
+2. Write all the Linked List methods
+    - Append
+    - Pop
+    - Prepend
+    - Pop first
+    - Get
+    - Set
+    - Insert
+    - Remove
+    - Reverse
 3. Instructions:
    Write a method to find and return the middle node in the Linked List WITHOUT using the length attribute.
 4. Instructions:
