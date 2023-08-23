@@ -117,6 +117,7 @@ class LinkedList:
         temp = self.head
         self.head = self.tail
         self.tail = temp
+        
         after = temp
         before = None
         for _ in range(self.length):
@@ -128,13 +129,14 @@ class LinkedList:
 
 my_linked_list = LinkedList(1)
 
-my_linked_list.append(2)
-my_linked_list.append(3)
-my_linked_list.append(3)
-my_linked_list.append(4)
-my_linked_list.append(4)
-my_linked_list.append(5)
-my_linked_list.prepend(0)
-my_linked_list.print_list()
-my_linked_list.remove_deplicate()
+# my_linked_list.append(2)
+# my_linked_list.append(3)
+# my_linked_list.append(3)
+# my_linked_list.append(4)
+# my_linked_list.append(4)
+# my_linked_list.append(5)
+# my_linked_list.prepend(0)
+# my_linked_list.print_list()
+# my_linked_list.remove_deplicate()
+my_linked_list.pop()
 my_linked_list.print_list()
