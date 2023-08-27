@@ -2,5 +2,8 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
-    "python.formatting.provider": "none"
+    "python.formatting.provider": "black",
+    "editor.fontFamily": "CaskaydiaCove Nerd Font Mono, Wales Sans Headline,  CodeNewRoman Nerd Font, mononoki Nerd Font, Cartograph CF, Cascadia Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": "'calt', 'ss01'",
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono, Wales Sans Headline,  CodeNewRoman Nerd Font, mononoki Nerd Font, Cartograph CF, Cascadia Code, Menlo, Monaco, 'Courier New', monospace"
 }
