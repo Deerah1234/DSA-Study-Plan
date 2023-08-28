@@ -121,7 +121,7 @@ class DoublyLinkedList:
         temp.prev = temp.next = None
 
         self.length -= 1
-        return temp.value
+        return temp
 
 
 my_doubly_linked_list = DoublyLinkedList(7)
