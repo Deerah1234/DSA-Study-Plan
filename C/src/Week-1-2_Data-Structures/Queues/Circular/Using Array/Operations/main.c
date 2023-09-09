@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Structure
 #define N 5
 int queue[N];
 int front = -1;
 int real = -1;
 
+// Operations
 void enqueue(int);
 void dequeue();
 void display();
@@ -34,6 +36,11 @@ int main(void)
     return (0);
 }
 
+/*
+    enqueue()
+    params: (x): data
+    void
+*/
 void enqueue(int x)
 {
     if (front == -1 && real == -1)
