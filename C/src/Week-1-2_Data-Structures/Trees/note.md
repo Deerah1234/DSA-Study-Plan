@@ -25,7 +25,7 @@ Tree can be defined as a collection of entities ( node ) linked together to *sim
 - Level of node: the distance from root to the given node; also equal to depth of the node.
 - Level of tree: is equal height of a tree.
 
-Nnodes => (n-1)edges.
+*Nnodes => (n-1)edges.*
 
 ## Application
 
