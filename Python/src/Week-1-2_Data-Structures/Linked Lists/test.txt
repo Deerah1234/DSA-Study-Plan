@@ -1,0 +1,26 @@
+row1=['X','X','X'] // 3
+row2=['X','X','X'] // 3
+row3=['X','X','X'] // 3
+
+matrix=[row1,row2,row3]
+
+print(f"{row1}\n{row2}\n{row3}")
+position=input("Enter the position where you want to hide money: ")
+
+row_number=int(position[0])
+colum_number=int(position[1])
+
+row_selected=matrix[row_number-1]
+row_selected=matrix[colum_number-1]='2'
+
+print(f"{row1}\n{row2}\n{row3}")
+
+
+# SECTION - The amount of money the user will hide
+# amount = input("Enter the amount you want to hide: ")
+
+#   c0  c1  c2
+#   0   1   2
+# ['X','X','X'] -> row 0
+# ['X','X','X'] -> row 1
+# ['X','X','X'] -> row 2
