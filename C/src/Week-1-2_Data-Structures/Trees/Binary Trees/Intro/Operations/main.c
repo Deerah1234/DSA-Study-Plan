@@ -56,7 +56,7 @@ struct node *create()
     return newnode;
 }
 
-// Formula used: Root Left Right
+// Formula: Root Left Right
 void preorder(struct node *root)
 {
     if (root == 0)
@@ -68,7 +68,7 @@ void preorder(struct node *root)
     preorder(root->right);
 }
 
-// Formula used: Left Root Right
+// Formula: Left Root Right
 void inorder(struct node *root)
 {
     if (root == 0)
@@ -80,7 +80,7 @@ void inorder(struct node *root)
     inorder(root->right);
 }
 
-// Formual used: Left Right Root
+// Formula: Left Right Root
 void postorder(struct node *root)
 {
     if (root == 0)
