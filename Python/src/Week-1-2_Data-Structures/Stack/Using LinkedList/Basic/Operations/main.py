@@ -29,10 +29,12 @@ class Stack:
     def pop(self) -> Node:
         if self.top is None:
             return None
+
         temp = self.top
         self.top = self.top.next
         temp.next = None
         self.height -= 1
+
         return temp
 
 
